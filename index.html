@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Surfing School</title>
+
     <link rel="icon" href="/favicon.png" type="image/png" />
 
-    <!-- Rethink Sans Font -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- Rethink Sans Font -->
+    <!-- Font -->
 
-    <!-- Normalize CSS -->
+    <!-- CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -23,9 +24,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Normalize CSS -->
-
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- CSS -->
   </head>
 
   <body>
@@ -41,10 +42,10 @@
               <a href="#" class="header__nav-link">Activities</a>
             </li>
             <li>
-              <a href="#" class="header__nav-link">Pricing Plan</a>
+              <a href="#" class="header__nav-link">Pricing</a>
             </li>
             <li>
-              <a href="#" class="header__nav-link">Contact Us</a>
+              <a href="#" class="header__nav-link">Contact</a>
             </li>
             <li>
               <a href="#" class="header__nav-link">Blog</a>
@@ -53,8 +54,9 @@
               <a href="#" class="header__nav-link">About Us</a>
             </li>
           </ul>
-          <a href="tel:+351912568342" class="header__cell">
-            <img src="images/phone-ico.svg" alt="" />+351912568342</a
+          <a href="tel:+351912568342" class="header__phone">
+            <img src="images/phone-ico.svg" width="24" alt="" />(+351) 912 568
+            342</a
           >
         </nav>
         <h1 class="title visually-hidden">VILAMOURA SURF SCHOOL</h1>
@@ -62,38 +64,51 @@
 
         <div class="header__content">
           <div class="header__info">
-            <p class="header__info-text">Vilamoura, Portugal</p>
+            <p class="header__location">Vilamoura, Portugal</p>
             <ul class="header__info-list">
-              <li class="header__info-item"><h4>Private Lessons</h4></li>
-              <li class="header__info-item"><h4>Group Lessons</h4></li>
-              <li class="header__info-item"><h4>Surf & SUP Rentals</h4></li>
-              <li class="header__info-item"><h4>Stand Up Paddle</h4></li>
-              <li class="header__info-item"><h4>Surf Trips</h4></li>
+              <li class="header__info-item">Private Lessons</li>
+              <li class="header__info-item">Group Lessons</li>
+              <li class="header__info-item">Surf & SUP Rentals</li>
+              <li class="header__info-item">Stand-Up Paddle</li>
+              <li class="header__info-item">Surf Trips</li>
             </ul>
 
             <div class="header__news-box">
-              <h3 class="header__news-title">NAZARE. BIG WAVE TRIP</h3>
-              <time datetime="2025-02-10" class="header__news-time"
-                >10.02.2025</time
+              <h3 class="header__news-title">NAZARÉ. BIG WAVE TRIP</h3>
+              <time datetime="2026-09-10" class="header__news-time"
+                >10.09.2026</time
               >
-              <a href="#" class="header__news-link">More Info</a>
-              <img src="images/news.jpg" alt="" class="header__news-img" />
+              <a href="#" class="header__news-link">Learn More</a>
+              <img
+                src="images/news.jpg"
+                width="352"
+                alt=""
+                class="header__news-img"
+              />
             </div>
           </div>
 
           <div class="header__actions">
             <ul class="header__social-list">
               <li>
-                <a href="#"><img src="images/facebook-ico.svg" alt="" /></a>
+                <a href="#" aria-label="Facebook"
+                  ><img width="62" src="images/facebook-ico.svg" alt=""
+                /></a>
               </li>
               <li>
-                <a href="#"><img src="images/instagram-ico.svg" alt="" /></a>
+                <a href="#" aria-label="Instagram"
+                  ><img width="62" src="images/instagram-ico.svg" alt=""
+                /></a>
               </li>
               <li>
-                <a href="#"><img src="images/youtube-ico.svg" alt="" /></a>
+                <a href="#" aria-label="YouTube"
+                  ><img width="62" src="images/youtube-ico.svg" alt=""
+                /></a>
               </li>
               <li>
-                <a href="#"><img src="images/whatsApp-ico.svg" alt="" /></a>
+                <a href="#" aria-label="WhatsApp"
+                  ><img width="62" src="images/whatsApp-ico.svg" alt=""
+                /></a>
               </li>
             </ul>
 
@@ -110,25 +125,25 @@
     <!--HEADER-->
 
     <main>
-      <blockquote class="container">
+      <div class="container">
         <p class="text quote">
           WHAT LOOKS IMPOSSIBLE TODAY, TOMORROW WILL BE YOUR SOURCE OF
           INSPIRATION AND RELAXATION
         </p>
-      </blockquote>
+      </div>
 
       <!--About section-->
       <section class="about container">
         <div class="about__content-wrapper">
           <div class="about__inner">
             <div class="about__intro">
-              <p class="about__subtitle">Who We Are</p>
+              <span class="about__subtitle eyebrow">Who We Are</span>
               <h2 class="about__title">VILAMOURA SURF SCHOOL</h2>
               <ul class="about__features">
-                <li class="about__feature"><h4>Algarve</h4></li>
-                <li class="about__feature"><h4>South Coast</h4></li>
+                <li class="about__feature">Algarve</li>
+                <li class="about__feature">South Coast</li>
                 <li class="about__feature">
-                  <h4>Perfect Waves for Your Experience</h4>
+                  Perfect Waves for Your Experience
                 </li>
               </ul>
             </div>
@@ -136,7 +151,7 @@
             <div class="about__description">
               <p class="about__description-text">
                 The school was founded in 2006 as the first surf school at
-                Vilamoura Beach, Algarve. Our school is certified by the
+                Vilamoura Beach in the Algarve. Our school is certified by the
                 Portuguese Surfing Federation and Turismo de Portugal. We aim to
                 teach the art of surfing in a safe, correct, and relaxed way,
                 always under the close and attentive supervision of our
@@ -144,12 +159,11 @@
                 ride waves on a surfboard with us.
               </p>
               <p class="about__description-text">
-                We have facilities that allow our students to equip themselves
-                and keep their belongings safe and at the end of the class they
-                have a warm shower at their disposal. We have a wide variety of
-                safe boards (softboards) and modern wetsuits to teach in a safe
-                and fun way. <br />The heads of the School are trained by the
-                Faculty, experienced and accredited by the Portuguese Surf
+                Our facilities allow students to get changed, safely store their
+                belongings, and enjoy a warm shower after class. We offer a wide
+                range of softboards and modern wetsuits, providing a safe and
+                enjoyable learning experience. <br />Our instructors are highly
+                trained, experienced, and accredited by the Portuguese Surfing
                 Federation. The School is open every day of the year, including
                 weekends and holidays. Hours vary depending on the tides and sea
                 conditions.
@@ -160,9 +174,9 @@
           <div class="about__media">
             <img
               class="about__image"
-              width="850"
+              width="750"
               src="/images/about-img.jpg"
-              alt=""
+              alt="Surfer riding waves at Vilamoura Beach"
             />
             <a href="#" class="about__link">Activities</a>
           </div>
@@ -172,12 +186,12 @@
 
       <!--Activities section-->
       <section class="activities container">
-        <p class="activities__subtitle">Activities</p>
+        <span class="activities__subtitle eyebrow">Activities</span>
         <div class="activities__info">
-          <p class="activities__title">
+          <h2 class="activities__title">
             WITHOUT RIP CURRENTS — SANDY BEACHES, <br />
             YOUR BEST ADVENTURE
-          </p>
+          </h2>
 
           <div class="activities__content">
             <p class="activities__description">
@@ -200,24 +214,34 @@
           <li class="activities__item">Private <br />Lessons</li>
           <li class="activities__item">Group <br />Lessons</li>
           <li class="activities__item">Surf & SUP <br />Rentals</li>
-          <li class="activities__item">Stand Up <br />Paddle</li>
+          <li class="activities__item">Stand-Up <br />Paddle</li>
           <li class="activities__item">Surf <br />Trips</li>
         </ul>
       </section>
       <!--Activities section-->
 
-      <img class="site-image" src="/images/image.jpg" alt="" />
+      <img
+        class="site-image"
+        width="1920"
+        src="/images/image.jpg"
+        alt="Surfer riding waves at Vilamoura Beach"
+      />
 
       <!--Reviews section-->
       <section class="reviews container">
         <div class="reviews__header">
-          <p class="reviews__subtitle">Reviews</p>
+          <span class="reviews__subtitle eyebrow">Reviews</span>
           <h2 class="reviews__title">LET'S GO SURF & SUP</h2>
         </div>
 
         <ul class="reviews__list">
           <li class="reviews__item">
-            <img class="reviews__image" src="/images/review-1.jpg" alt="" />
+            <img
+              class="reviews__image"
+              width="270"
+              src="/images/review-1.jpg"
+              alt=""
+            />
             <div class="reviews__content">
               <blockquote class="reviews__quote">
                 I rented all the equipment for 7 days. New gear! 10 stars.
@@ -230,7 +254,12 @@
           </li>
 
           <li class="reviews__item">
-            <img class="reviews__image" src="/images/review-2.jpg" alt="" />
+            <img
+              class="reviews__image"
+              width="560"
+              src="/images/review-2.jpg"
+              alt=""
+            />
             <div class="reviews__content">
               <blockquote class="reviews__quote">
                 It was an unforgettable experience. The instructors were super
@@ -246,7 +275,12 @@
           </li>
 
           <li class="reviews__item">
-            <img class="reviews__image" src="/images/review-3.jpg" alt="" />
+            <img
+              class="reviews__image"
+              width="560"
+              src="/images/review-3.jpg"
+              alt=""
+            />
             <div class="reviews__content">
               <blockquote class="reviews__quote">
                 I had a class at the end of the day. The instructors were super
@@ -263,7 +297,12 @@
           </li>
 
           <li class="reviews__item">
-            <img class="reviews__image" src="/images/review-4.jpg" alt="" />
+            <img
+              class="reviews__image"
+              width="270"
+              src="/images/review-4.jpg"
+              alt=""
+            />
             <div class="reviews__content">
               <blockquote class="reviews__quote">
                 The best experience of my life.
@@ -286,33 +325,35 @@
       <div class="footer__container">
         <div class="footer__top">
           <h2 class="footer__title">VILAMOURA SURF SCHOOL</h2>
-          <a href="/" class="footer__logo"><img src="images/logo.png" /></a>
+          <a href="/" class="footer__logo" aria-label="Vilamoura Surf School"
+            ><img width="125" src="images/logo.png" alt=""
+          /></a>
         </div>
 
         <div class="footer__info">
           <div class="footer__column">
-            <h2 class="footer__">Surf School</h2>
+            <h2 class="footer__subtitle">Surf School</h2>
             <p class="footer__text">
-              Record n. 325 <br />Portuguese Surfing Federation
+              Record No. 325 <br />Portuguese Surfing Federation
             </p>
 
-            <p class="footer__text">RNAAT registration 986/2016</p>
+            <p class="footer__text">RNAAT Registration No. 986/2016</p>
           </div>
 
           <div class="footer__column">
-            <h2 class="footer__">Address</h2>
+            <h2 class="footer__subtitle">Address</h2>
             <p class="footer__text">
-              Record n. 325 <br />Portuguese Surfing Federation
+              Record No. 325 <br />Portuguese Surfing Federation
             </p>
 
             <p class="footer__text">Vilamoura - Algarve - Portugal</p>
           </div>
 
           <div class="footer__column">
-            <h2 class="footer__">Contacts</h2>
+            <h2 class="footer__subtitle">Contacts</h2>
 
             <p class="footer__text">
-              Mobile and WhatsApp <br />
+              Phone & WhatsApp <br />
               <a href="tel:+351912568342"> (+351) 912 568 342 </a>
             </p>
 
@@ -325,24 +366,30 @@
         <div class="footer__actions">
           <ul class="footer__social-list">
             <li>
-              <a href="#"><img src="images/facebook-ico-white.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="images/instagram-ico-white.svg" alt=""
+              <a href="#" aria-label="Facebook"
+                ><img width="62" src="images/facebook-ico-white.svg" alt=""
               /></a>
             </li>
             <li>
-              <a href="#"><img src="images/youtube-ico-white.svg" alt="" /></a>
+              <a href="#" aria-label="Instagram"
+                ><img width="62" src="images/instagram-ico-white.svg" alt=""
+              /></a>
             </li>
             <li>
-              <a href="#"><img src="images/whatsApp-ico-white.svg" alt="" /></a>
+              <a href="#" aria-label="YouTube"
+                ><img width="62" src="images/youtube-ico-white.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="WhatsApp"
+                ><img width="62" src="images/whatsApp-ico-white.svg" alt=""
+              /></a>
             </li>
           </ul>
           <ul class="footer__legal-list">
-            <li>Terms and conditions</li>
-            <li>Privacy policy</li>
-            <li>Complaint book</li>
+            <li>Terms and Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Complaint Book</li>
           </ul>
         </div>
       </div>
